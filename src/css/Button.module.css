@@ -1,0 +1,38 @@
+.buttonSubmit {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.buttonSubmit:hover {
+  background-color: darkblue;
+}
+
+.buttonError {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.buttonError:hover {
+  background-color: darkred;
+}
+
+.buttonSuccess {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.buttonSuccess:hover {
+  background-color: darkgreen;
+}

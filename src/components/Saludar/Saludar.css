@@ -1,0 +1,11 @@
+.saludar-container .saludo{
+    color: lightblue;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.saludar-container .creditos{
+    color: lightgray;
+    font-size: 12px;
+    margin-top: 10px;
+}

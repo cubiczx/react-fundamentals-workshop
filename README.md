@@ -1,70 +1,120 @@
-# Getting Started with Create React App
+# React Fundamentals Workshop 🚀
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Proyecto educativo que demuestra los conceptos fundamentales de React con TypeScript, incluyendo componentes, props, state, hooks y composición.
 
-## Available Scripts
+## 📋 Descripción
 
-In the project directory, you can run:
+Esta aplicación es un laboratorio de aprendizaje que incluye varios componentes demostrativos:
 
-### `npm start`
+- **Saludar**: Componente que muestra información de usuarios y ejecuta callbacks
+- **Formulario**: Ejemplo de manejo de formularios básicos
+- **LoginForm**: Formulario de autenticación
+- **Car**: Demostración de `useState` y `useEffect` con un simulador de estado de vehículo
+- **LayoutBasic**: Patrón de composición usando `children` prop
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠️ Tecnologías
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React 18
+- TypeScript
+- CSS/SCSS
+- Vite (o Create React App)
 
-### `npm test`
+## 🚀 Cómo Ejecutar
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisitos
+- Node.js (v14 o superior)
+- npm o yarn
 
-### `npm run build`
+### Instalación
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clona el repositorio o navega al directorio del proyecto:
+```bash
+cd "react-fundamentals-workshop"
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Instala las dependencias:
+```bash
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Ejecución en Desarrollo
 
-### `npm run eject`
+```bash
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+La aplicación se abrirá en [http://localhost:3000](http://localhost:3000) (o el puerto configurado).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Build para Producción
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm run build
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📚 Conceptos Demostrados
 
-## Learn More
+### 1. **Props y TypeScript Interfaces**
+```tsx
+interface User {
+  name: string;
+  surname: string;
+  age: number;
+  color: string;
+}
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 2. **useState Hook**
+Manejo de estado local en el componente `Car`:
+- Estado del encendido/apagado
+- Contador de kilómetros
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 3. **useEffect Hook**
+Sincronización con efectos externos (actualización del título del documento)
 
-### Code Splitting
+### 4. **useCallback Hook**
+Optimización de funciones para evitar re-renders innecesarios
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 5. **Component Composition**
+Uso del patrón `children` prop en `LayoutBasic` para crear layouts reutilizables
 
-### Analyzing the Bundle Size
+### 6. **Arrays y Renderizado de Listas**
+Mapeo de arrays de usuarios con la prop `key`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 📁 Estructura del Proyecto
 
-### Making a Progressive Web App
+```
+mi-primera-app/
+├── src/
+│   ├── components/
+│   │   ├── Saludar/
+│   │   │   └── Saludar.tsx
+│   │   ├── Formulario.tsx
+│   │   ├── LoginForm.tsx
+│   │   ├── LayoutBasic.tsx
+│   │   ├── LayoutBasic.scss
+│   │   └── Car.tsx
+│   ├── App.tsx
+│   ├── App.css
+│   └── index.tsx
+└── package.json
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🎯 Características del Componente Car
 
-### Advanced Configuration
+El componente `Car` simula el estado de un vehículo:
+- ✅ Encender/Apagar el coche
+- ✅ Aumentar kilómetros solo si está encendido
+- ✅ Indicador visual con emojis 🟢/🔴
+- ✅ Actualización dinámica del título de la página
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🤝 Contribuciones
 
-### Deployment
+Este es un proyecto educativo. Siéntete libre de hacer fork y experimentar con diferentes conceptos de React.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 📝 Licencia
 
-### `npm run build` fails to minify
+MIT
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 👨‍💻 Autor
+
+Proyecto creado como parte del curso de React en Udemy.
