@@ -15,7 +15,7 @@ export default function LayoutBasic(props: LayoutBasicProps) {
                 <h2 className='saludo'>Bienvenidos a mi primera aplicación de React</h2>
             </header>
             <div className="LayoutBasic-content">
-                <p>{children}</p>
+                {children}
             </div>
             <div className="LayoutBasic-footer">
                 <p>© 2026 Mi Primera App. Todos los derechos reservados.</p>
