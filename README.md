@@ -34,7 +34,7 @@ Esta aplicación es un laboratorio de aprendizaje que incluye varios componentes
 cd "react-fundamentals-workshop"
 ```
 
-1. Instala las dependencias:
+2. Instala las dependencias:
 
 ```bash
 npm install
