@@ -93,23 +93,7 @@ Mapeo de arrays de usuarios con la prop `key`
 ## 📁 Estructura del Proyecto
 
 ```text
-mi-primera-app/
-├── src/
-│   ├── components/
-│   │   ├── Saludar/
-│   │   │   └── Saludar.tsx
-│   │   ├── Formulario.tsx
-│   │   ├── LoginForm.tsx
-│   │   ├── LayoutBasic.tsx
-│   │   ├── LayoutBasic.scss
-│   │   └── Car.tsx
-│   ├── App.tsx
-│   ├── App.css
-│   └── index.tsx
-└── package.json
-```
-```
-mi-primera-app/
+react-fundamentals-workshop/
 ├── src/
 │   ├── components/
 │   │   ├── Saludar/
